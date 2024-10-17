@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-//Checked / Runtime Exception
+//Checked / Compile Time Exception
 //Eg : ClassNotFoundException, InterruptedException, IOException, SQLException
 //Throws Keyword is used at method, tell that method might throw a kind of mentioned exception, so ii caller method to handle it by try, catch block.
 //Throw is used to throw a new kind of exception
@@ -49,6 +49,8 @@ public class CheckedException {
             System.out.println(e);
         }catch (Exception e){
             System.out.println(e);
+        }finally {
+            System.out.println("After throw and catch block");
         }
     }
     public static void main(String[] args) {
